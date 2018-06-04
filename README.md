@@ -12,3 +12,4 @@
 - [Js正则大法](https://github.com/bbbbbbbb888888/article/blob/master/md/regexp.md)  
 - [vuex状态管理](https://github.com/bbbbbbbb888888/article/blob/master/md/vuex.md) 
 - [Http状态码304](https://github.com/bbbbbbbb888888/article/blob/master/md/http304.md)
+- [从输入URL到页面加载发生了什么](https://github.com/bbbbbbbb888888/article/blob/master/md/url.md)
