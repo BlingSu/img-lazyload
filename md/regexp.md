@@ -95,19 +95,19 @@ let regex = new RegExp(/^[a-zA-Z]/, 'gi')
 
 1. 字符类规则
 
-<img src="./img/1.png" />
+<img src="../img/1.png" />
 
 2. 范围符号匹配规则
 
-<img src="./img/2.png" />
+<img src="../img/2.png" />
 
 3. 分组匹配规则
 
-<img src="./img/3.png" />
+<img src="../img/3.png" />
 
 4. 重复匹配规则
 
-<img src="./img/4.png" />
+<img src="../img/4.png" />
 
 ### 常用正则匹配  
 
