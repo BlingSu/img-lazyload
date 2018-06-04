@@ -11,4 +11,4 @@
 - [Node之process](https://github.com/bbbbbbbb888888/article/blob/master/node-process.md)  
 - [Js正则大法](https://github.com/bbbbbbbb888888/article/blob/master/regexp.md)  
 - [vuex状态管理](https://github.com/bbbbbbbb888888/article/blob/master/vuex.md) 
--[Http状态码304](https://github.com/bbbbbbbb888888/article/blob/master/http304.md)
+- [Http状态码304](https://github.com/bbbbbbbb888888/article/blob/master/http304.md)
