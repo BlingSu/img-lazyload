@@ -197,7 +197,7 @@ console.log(t.c[1]) // 2
   for (var i = types.length; i--;) {
     $['is' + types[i]] = (function (_this) {
       return function (ele) {
-        return type.call(ele) === _this;
+        return type.call(ele) === _this
       }
     })(types[i])
 	}
