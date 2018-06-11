@@ -15,3 +15,4 @@
 - [深入原型到原型链](https://github.com/bbbbbbbb888888/article/blob/master/md/prototype.md)
 - [JS浅拷贝与深拷贝](https://github.com/bbbbbbbb888888/article/blob/master/md/copy.md)
 - [深入理解call和apply](https://github.com/bbbbbbbb888888/article/blob/master/md/call-apply.md)
+- [JS Arguments理解](https://github.com/bbbbbbbb888888/article/blob/master/arguments.md)
