@@ -1,0 +1,25 @@
+{
+  "name": "img-lazyload",
+  "version": "1.0.0",
+  "description": "一个轻量级的图片懒加载插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelasubi/img-lazyload.git"
+  },
+  "keywords": [
+    "懒加载",
+    "lazyload",
+    "img",
+    "img-lazyload"
+  ],
+  "author": "angelasubi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angelasubi/img-lazyload/issues"
+  },
+  "homepage": "https://github.com/angelasubi/img-lazyload#readme"
+}
