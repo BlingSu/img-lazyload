@@ -6,12 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
   <script src="../index.js"></script>
   <style type="text/css">
-    .photo {width: 100%; height: 200px;}
+    .lazyload {width: 100%; height: 200px;}
   </style>
 </head>
 <body>
   <div class="content">
-    <img class="photo" data-src="">
+    <img class="lazyload" data-src="https://cdn.unwire.hk/wp-content/uploads/2016/01/12093713_1001163936613423_1163067742_n.jpg">
+    <img class="lazyload" data-src="http://www.xinhuanet.com/photo/2016-01/03/128590034_14517789952091n.jpg">
+    <img class="lazyload" data-src="http://tw.ptt01.cc/zhtw/c033/Image/20160219/6359146416834298669632519.jpg">
+    <img class="lazyload" data-src="https://img.appledaily.com.tw/images/ReNews/20160117/640_fdd85b521959de7329119579680ab389.jpg">
+    <img class="lazyload" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRODBUqEgjr_WFXROJQQTyGdSwKwAh8O5hu0hTcLo4hfqPYwNyY">
+    <img class="lazyload" data-src="http://zxpic.gtimg.com/infonew/0/cul_pics_-155771.jpg/400">
+    <img class="lazyload" data-src="https://img1.pixpo.net/img/f3/2/0inj8v6mcb/sg_0INJ8v6MCB.jpg">
   </div>
 </body>
+
+<script type="text/javascript">
+  new LazyLoad('.lazyload')
+</script>
 </html>
