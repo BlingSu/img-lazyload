@@ -8,10 +8,7 @@
   }
 }(typeof global !== 'undefined' ? global : this.window || this.global, function(ele) {
   'use strict'
-  const defaultOption = {
-    src: 'data-src',
-    selector: '.lazyload'
-  }
+
   let indexNum = 0
   function LazyLoad(selector, option) {
     this.selector = selector
@@ -20,20 +17,19 @@
     this.init()
   }
   LazyLoad.prototype = {
-    init: function() {
-      window.onload = function() {
-        this.checkImages()
-      }
+    init() {
+      let _this = this
+      _this.checkImages()
+      _this.scrollImages()
     },
-    isShow: function(selector) {
+    isShow(selector) {
       const bound = selector.getBoundingClientRect()
       const clientHeight = window.innerHeight || document.documentElement.clientHeight // in bottom
-      console.log(bound, clientHeight)
       return bound.bottom > 0 && bound.top < clientHeight
     },
-    loadImage: function(selector) {
+    loadImage(selector) {
       let image = new Image()
-      image.onload = function() {
+      image.onload = () => {
         selector.src = image.src
       }
       image.src = selector.dataset.src
@@ -47,7 +43,36 @@
           this.indexNum = i
         }
       }
-    }
+    },
+    throttle(fn, time) {
+      let timeout,
+          start_time = new Date()
+      return () => {
+        let _this = this,
+            arts = arguments,
+            current_time = new Date()
+        clearTimeout(timeout)
+
+        if (current_time - start_time >= time) {
+          fn.apply(_this, args)
+          start_time = current_time
+        } else {
+          timeout = setTimeout(fn, apply)
+        }
+      }
+    },
+    scrollImages() {
+      let _this = this;
+      window.onscroll = () => {
+        _this.throttle(
+            _this.checkImages(),
+            _this.option.time === undefined ? 50 : _this.option.time
+          )
+      }
+      window.onload = () => {
+        _this.checkImages()
+      }
+    },
   }
 
   return LazyLoad;
